@@ -44,9 +44,60 @@ public static ItemStack getCheeseSkull() {
 ```
 
 ## Installation
-To use this library, copy the class from [GitHub][skullcreator-git] and put it in your project.
+### Maven
+Get the package from Jitpack.
+#### pom.xml
+```xml
+    <repositories>
+        ...
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        ...
+    </repositories>
+
+    <dependencies>
+        ...
+    	<dependency>
+    	    <groupId>com.github.DasSharkk</groupId>
+    	    <artifactId>SkullCreator</artifactId>
+    	    <version>RELEASE</version>
+    	</dependency>
+        ...
+    </dependencies>
+```
+#### build.gradle
+```gradle
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+        ...
+    }
+    dependencies {
+        ...
+        implementation 'com.github.DasSharkk:SkullCreator:RELEASE'
+        ...
+    }
+```
+#### build.gradle.kts
+```kts
+    repositories {
+        ...
+        maven("https://jitpack.io")
+        ...
+    }
+    dependencies {
+        ...
+        implementation("com.github.DasSharkk:SkullCreator:RELEASE")
+        ...
+    }
+```
+
+### Manual
+To use this library, copy the class from [GitHub][skullcreator-git] and put it in your project
 
 [freshcoal]: http://heads.freshcoal.com
 [mineskin]: https://mineskin.org
 [minecraft-heads]: http://minecraft-heads.com/
-[skullcreator-git]: https://github.com/Deanveloper/SkullCreator/blob/master/src/main/java/com/deanveloper/skullcreator/SkullCreator.java
+[skullcreator-git]: https://github.com/DasSharkk/SkullCreator/blob/main/src/main/java/day/dean/skullcreator/SkullCreator.java
